@@ -7,11 +7,11 @@ var anniPasseggero = prompt('Quanti anni ha il passeggero?');
 var prezzo = chilometriDaPercorrere * 0.21;
 // sconto del 20% per i <= 18
 if (anniPasseggero <= 18) {
-    prezzo = prezzo * 20 / 100
+    prezzo = prezzo * 0.2
 } 
 // sconto del 40% per gli >= 65.
 else if (anniPasseggero >= 65) {
-    prezzo = prezzo * 40 / 100
+    prezzo = prezzo * 0.4
 }
-console.log(prezzo);
 // Mostra risultato con solo due decimali
+alert("Il prezzo del suo biglietto è di: " + prezzo.toFixed(2) + "€");
